@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <com.twentyfive.hlistview.HListView
+        android:id="@+id/list_view"
+        style="@style/HListViewStyle">
+        <requestFocus/>
+    </com.twentyfive.hlistview.HListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/press"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:padding="10dp"
+            android:text="Press"
+            android:textSize="26sp"
+            tools:text="Press"
+            android:layout_marginRight="10dp">
+        </Button>
+
+        <Button
+            android:id="@+id/longPress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:padding="10dp"
+            android:text="Long Press"
+            android:textSize="26sp"
+            tools:text="Long Press"
+            tools:ignore="ButtonStyle">
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
